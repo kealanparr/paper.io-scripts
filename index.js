@@ -1,11 +1,11 @@
-    var div = document.createElement('div');
+   var div = document.createElement('div');
     div.onclick = function(){
       window.scale = 0.5
     }
 
     var out = document.createElement('div');
     out.onclick = function(){
-      window.scale = 1
+      window.scale = 6
     }
 
     var ui = document.getElementById("game")
@@ -13,25 +13,25 @@
     ui.appendChild(out)
     ui.appendChild(div)
 
-    div.position = "absolute";
-    div.top = "100px";
-    div.right = "100px";
-    div.z-index = "1000000000000";
-    div.border = "1px solid black";
-    div.display = "block";
-    div.width = "100px";
-    div.backgroundColor = "pink";
-    div.height = "100px";
+    div.style.position = "absolute";
+    div.style.top = "100px";
+    div.style.right = "100px";
+    div.style.zIndex = "1000000000000";
+    div.style.border = "1px solid black";
+    div.style.display = "block";
+    div.style.width = "100px";
+    div.style.backgroundColor = "pink";
+    div.style.height = "100px";
 
-    out.position = "absolute";
-    out.top = "100px";
-    out.right = "100px";
-    out.z-index = "1000000000000";
-    out.border = "1px solid black";
-    out.display = "block";
-    out.width = "100px";
-    out.backgroundColor = "pink";
-    out.height = "100px";
+    out.style.position = "absolute";
+    out.style.top = "400px";
+    out.style.right = "100px";
+    out.style.zIndex = "1000000000000";
+    out.style.border = "1px solid black";
+    out.style.display = "block";
+    out.style.width = "100px";
+    out.style.backgroundColor = "pink";
+    out.style.height = "100px";
 
 
     setInterval(function(){
