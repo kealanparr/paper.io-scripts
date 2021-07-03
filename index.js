@@ -49,10 +49,10 @@
 
 window.addEventListener('wheel', function(event) {
  if (event.deltaY < 0) {
-   window.scale -= 0.2
+   window.scale += 0.2
  }
  else if (event.deltaY > 0) {
-    window.scale += 0.2
+    window.scale -= 0.2
  }
 });
 
