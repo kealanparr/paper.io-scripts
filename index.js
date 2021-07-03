@@ -1,3 +1,8 @@
+
+// <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+//////            Version 1
+// <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+
    var div = document.createElement('div');
     div.onclick = function(){
       window.scale = 0.5
@@ -37,3 +42,22 @@
     setInterval(function(){
       paperio2api.game.scale = window.scale
     }, 10)
+
+// <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+//////            Version 2
+// <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+
+window.addEventListener('wheel', function(event) {
+ if (event.deltaY < 0) {
+   window.scale -= 0.2
+ }
+ else if (event.deltaY > 0) {
+    window.scale += 0.2
+ }
+});
+
+window.scale = 1;
+
+setInterval(function() {
+  paperio2api.game.scale = window.scale
+}, 5)
